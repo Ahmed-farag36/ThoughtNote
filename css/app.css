@@ -1,0 +1,111 @@
+@font-face{
+	font-family: "helvetica-bold";
+	src: url("../fonts/helvetica-neue-condensed-black.ttf");
+}
+@font-face{
+	font-family: "helvetica-light";
+	src: url("../fonts/helvetica-neue-light.ttf");
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "helvetica-light", sans-serif;
+	text-align: center;
+}
+header{
+	padding: 0;
+	background-color: #ffff52;
+
+}
+header h1{
+	font-size: 50px;
+	font-family: "helvetica-bold", sans-serif;
+}
+header h1 span{
+	color: #999;
+	font-size: 25px;
+	font-family: "helvetica-light", sans-serif;
+}
+.burger-icon{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 45px;
+	left: 40px;
+	cursor: pointer;
+}
+.stick, .stick::before, .stick::after{
+	width: 40px;
+	height: 4px;
+	background-color: #555;
+	position: absolute;
+	left: 0;
+	top: 18px;
+}
+.stick::before{
+	content: "";
+	top: -10px;
+}
+.stick::after{
+	content: "";
+	top:10px;
+}
+main{
+	padding: 40px;
+	position: relative;
+}
+main textarea{
+	width: 700px;
+	max-width: 700px;
+	height: 400px;
+	max-height: 400px;
+	text-align: center;
+	font-size: 50px;
+	font-family: "helvetica-bold";
+	margin-bottom: 60px;
+}
+main input{
+	width: 117px;
+	height: 40px;
+	border: none;
+	color: white;
+	font-family: "helvetica-light";
+	font-size: 15px;
+	position: absolute;
+	cursor: pointer;
+}
+main input:focus{
+	outline: none;
+}
+main input[type="submit"]{
+	background-color: #3388ff;
+	left: 35%;
+	top: 370px;
+}
+main input[type="reset"]{
+	background-color: #ff5572;
+	left: 55%;
+	top: 370px;
+}
+hr{
+	width: 700px;
+}
+section{
+	width: 700px;
+	margin: 0 auto;
+	text-align: left;
+}
+section div{
+	border: 1px solid #38f;
+	border-top-width: 3px;
+	border-radius: 2%;
+	padding: 10px 20px;
+	max-height: 100px;
+	overflow: hidden;
+	color: #555;
+	margin: 40px 0;
+}
+footer{
+	padding: 2px;
+	background-color: #ffff52;
+}
